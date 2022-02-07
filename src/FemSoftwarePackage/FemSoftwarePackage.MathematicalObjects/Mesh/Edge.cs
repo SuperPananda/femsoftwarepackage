@@ -8,11 +8,6 @@ namespace FemSoftwarePackage.MathematicalObjects.Mesh
     public class Edge
     {
         /// <summary>
-        /// Номер ребра
-        /// </summary>
-        public int EdgeTag { get; set; }
-
-        /// <summary>
         /// Координата, к которой относится ребро
         /// </summary>
         public Coordinate Coordinate { get; set; }
@@ -20,11 +15,11 @@ namespace FemSoftwarePackage.MathematicalObjects.Mesh
         /// <summary>
         /// Узел первый
         /// </summary>
-        public Node Node1 { get; set; }
+        public int NodeTag1 { get; set; }
 
         /// <summary>
         /// Узел второй
         /// </summary>
-        public Node Node2 { get; set; }
+        public int NodeTag2 { get; set; }
     }
 }
